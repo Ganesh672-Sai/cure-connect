@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cancer Chatbot AI</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./cancer info.html">Cancer Info</a></li>
+            <li><a href="./chat.html">Chatbot</a></li>
+            <li><a href="./booking.html">Booking Hospitals</a></li>
+            <li><a href="./conta.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Cancer Chatbot AI</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">Hello! I am your Cancer Chatbot. How can I assist you today?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()" id="send-button"><i class="fa fa-paper-plane"></i></button>
+        </div>
+        <div class="chat-suggestions" id="chat-suggestions"></div>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="./scrpit.js"></script>
+</body>
+</html>
